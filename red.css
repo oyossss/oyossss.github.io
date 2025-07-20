@@ -1,3 +1,11 @@
+.csrf {
+  display: block !important;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  position: absolute;
+}
+
 CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 BIN_URL = "https://brcgtxx.request.dreamhack.games"
 
